@@ -1,44 +1,81 @@
 <html>
 <head>
-      <style>
-	   body {
+<style>
+body {
 	  background-image: url("background/background-main page.jpg");
 	  background-size: cover;}
-	 
-	  .topnav a {float: left;
-	            display: block;
-                color: #191970;
-                text-align: center;
-                padding: 5px 90px;
-                text-decoration: none;
-				font-size: 200%;
-		        text-shadow: 1px 1px white;}
-
-      .topnav a:hover {color: white;
-	                   text-shadow: 1px 1px black;} 
-      .download a{float: right;}
-	  .download a:hover {opacity: 0.7;} 
-		 </style>
-   <title>Genshin Impact information Main page</title>
+.top a {
+  text-decoration: none;
+  color: #191970;
+  font-size: 180%;
+  padding: 5px;
+  display:inline-block;
+  text-align: center;
+  margin: 5px 75px;
+  text-shadow: 1px 1px white;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 160px;
+  display: none;
+}
+ul li ul li { 
+  
+  display: block; 
+}
+ul li ul li a {display:block;} 
+.top a:hover {color: white;
+	             text-shadow: 1px 1px black;} 
+.download a:hover {opacity: 0.7;} 
+	  .ps4 {position: fixed;
+	        bottom: 10px;
+			right: 10px;}
+	  .app {position: fixed;
+	        bottom: 10px;
+			right: 208px;}
+	  .google {position: fixed;
+	        bottom: 10px;
+			right: 406px;}
+	  .windows {position: fixed;
+	        bottom: 10px;
+			right: 604px;}
+</style>
+<title>Genshin Impact information Main page</title>
 </head>
 <body>
 <h1><img src="background/title1.png"
          width="400"
-         height"200">
+         height="200">
 </h1>
-<div class="topnav">
+<div class="top">
   <a href="character.html">Characters</a>
   <a href="weapons.html">Weapons</a>
   <a href="artifacts.html">Artifacts</a>
-  <a href="enemies.html">Enemies</a>
+  <ul>
+    <li>
+      <a href="https://genshin-impact.fandom.com/wiki/Enemies">Enemies▾</a>
+      <ul>
+        <li><a href="common enemies.html">common enemies</a></li>
+        <li><a href="elite enemies.html">elite enemies</a></li>
+        <li><a href="normal bosses.html">normal bosses</a></li>
+		<li><a href="weekly bosses.html">weekly bosses</a></li>
+      </ul>
+    </li>
+  </ul>
   <a href="about me.html">About me</a>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="download">  
- <a href="https://www.playstation.com/zh-hant-tw/games/genshin-impact/"><img src="background/ps4.png"></a>
- <a href="https://apps.apple.com/app/id1517783697"><img src="background/app.png"></a>
- <a href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact"><img src="background/google.png"></a>
- <a href="https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default"><img src="background/windows.png"></a>
+ <a class="ps4" href="https://www.playstation.com/zh-hant-tw/games/genshin-impact/"><img src="background/ps4.png"></a>
+ <a class="app" href="https://apps.apple.com/app/id1517783697"><img src="background/app.png"></a>
+ <a class="google" href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact"><img src="background/google.png"></a>
+ <a class="windows" href="https://ys-api-os.mihoyo.com/event/download_porter/link/ys_global/genshinimpactpc/default"><img src="background/windows.png"></a>
  </div>
 </body>
 </html>
